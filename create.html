@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Information</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./javascript/store.js"></script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="flex justify-center items-center">
+      <div>
+        <h1 class="text-blue-500 font-bold text-2xl">Input your information</h1>
+
+        <form class="flex flex-col gap-2 mt-10">
+          <input type="hidden" name="updateId" />
+          <label for="username" class="block text-sm font-medium text-blue-500"
+            >Username</label
+          >
+          <input
+            id="username"
+            class="block w-full p-2 text-gray-900 border-2 border-blue-500 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500"
+            type="text"
+            name="createUsername"
+            type="text"
+            placeholder="Enter your username"
+            required
+          />
+
+          <label for="firstname" class="block text-sm font-medium text-blue-500"
+            >First name</label
+          >
+          <input
+            id="firstname"
+            class="block w-full p-2 text-gray-900 border-2 border-blue-500 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500"
+            type="text"
+            name="createFirstname"
+            placeholder="Enter your firstname"
+            required
+          />
+
+          <label
+            for="middlename"
+            class="block text-sm font-medium text-blue-500"
+            >Middle name</label
+          >
+          <input
+            id="middlename"
+            class="block w-full p-2 text-gray-900 border-2 border-blue-500 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500"
+            type="text"
+            name="createMiddlename"
+            type="text"
+            placeholder="Enter your middlename"
+            required
+          />
+
+          <label for="lastname" class="block text-sm font-medium text-blue-500"
+            >Last name</label
+          >
+          <input
+            id="lastname"
+            class="block w-full p-2 text-gray-900 border-2 border-blue-500 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500"
+            type="text"
+            name="createLastname"
+            type="text"
+            placeholder="Enter your lastname"
+            required
+          />
+
+          <input
+            type="button"
+            value="Create an account"
+            onclick="createUser()"
+            class="mt-5 bg-blue-500 rounded-md text-white py-2 cursor-pointer"
+          />
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
